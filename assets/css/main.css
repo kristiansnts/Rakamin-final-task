@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+/* VARIABLES */
+:root {
+    --primary: #FF6D0B;
+    --white: #fff;
+}
+
+/* RESET */
+*, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FONT */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* BASE STYLE */
+.flex {
+    display: flex;
+}
+
+.row {
+    margin: 2em 0;
+}
+
+.leading {
+    color: var(--primary);
+}
+
+/* MOBILE STYLE */
+/* NAVIGATION */
+nav {
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 999;
+}
+
+nav .brand {
+    width: 89.63px;
+    height: 35px;
+}
+
+/* MAIN */
+
+main {
+    margin: 7em auto;
+}
+
+/* ==== HERO ==== */
+
+.hero {
+    background-image: url('https://www.qwords.com/wp-content/themes/qwords/assets/images/shapes/webp/main-bg.webp');
+    background-repeat: no-repeat;
+    font-size: 1rem;
+}
+
+form input {
+    display: block;
+    width: 85%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.2);
+}
+
+form .domain-btn {
+    background-color: black;
+    padding: 10px 40px; 
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.register {
+    justify-content: center;
+}
+
+.register img {
+    margin: 10px 0;
+    height: 30px;
+}
+
+
+/* ==== PACKET ==== */
+.packet {
+    margin: 3em 2em;
+}
+
+section select {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    appearance: none;
+    box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.2);
+    background-image: url("/assets/img/caret-down-light.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 18px) center;
+}
+
+.packet-card {
+    margin: 10px auto;
+    background-color: white;
+    padding: 30px 20px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.2);
+}
+
+.packet-card .packet-name {
+    margin: 10px;
+}
+
+.packet-card .packet-name s {
+    text-decoration: line-through;
+}
+
+.packet-card .price {
+    display: flex;
+    flex-direction: column;
+    color: #696969;
+}
+
+.packet-card .price span{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.packet-card .content {
+    margin: 30px 20px;
+}
+
+.content li {
+    display: flex;
+}
+
+.content li img {
+    width: 36px;
+    height: 36px;
+    margin: 8px 0;
+}
+
+.content .text {
+    font-size: .9rem;
+    margin-left: 20px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content .text .feature-value {
+    font-weight: bold;
+}
+
+.order-btn {
+    color: white;
+    padding: 8px 75px;
+    background-color: #4AA3FF;
+    border-radius: 30px;
+    font-size: .9rem;
+}
+
+
+/* ==== ADD-ON ==== */

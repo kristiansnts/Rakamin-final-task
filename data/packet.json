@@ -1,0 +1,50 @@
+[
+    {
+        "type": "Value Cloud Hosting",
+        "name": "VCH1",
+        "normalPrice": "Rp 24.500",
+        "discountPrice": "Rp 14.500",
+        "features": {
+            "disk": "3 GB",
+            "bandwith": "Unlimited",
+            "core": "0.5",
+            "addon": "No"
+        }
+    },
+    {
+        "type": "Unlimited Hosting",
+        "name": "Signature",
+        "normalPrice": "Rp 114.000",
+        "discountPrice": "Rp 89.000",
+        "features": {
+            "disk": "Unlimited",
+            "bandwith": "Unlimited",
+            "core": "1",
+            "addon": "5 / 5"
+        }
+    },
+    {
+        "type": "High Performance",
+        "name": "HPCH Bisnis 1",
+        "normalPrice": "Rp 100.000",
+        "discountPrice": "Rp 79.000",
+        "features": {
+            "disk": "3 GB",
+            "bandwith": "Unlimited",
+            "core": "1",
+            "addon": "-"
+        }
+    },
+    {
+        "type": "Cloud VPS KVM SSD",
+        "name": "VPS SC1",
+        "normalPrice": "Rp 135.000",
+        "discountPrice": "Rp 75.000",
+        "features": {
+            "disk": "25 GB",
+            "bandwith": "Unlimited",
+            "core": "1",
+            "addon": "Unlimited"
+        }
+    }
+]
