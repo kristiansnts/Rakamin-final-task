@@ -46,7 +46,7 @@ function changePacketUI(result) {
     const resultData = result.reduce((result, current) => {
         return { ...result, ...current};
     }, {});
-    const card = document.querySelector('.container');
+    const card = document.getElementById('container');
 
     str = `<div class="card packet-card">
     <div class="packet-name">

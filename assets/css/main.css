@@ -36,8 +36,23 @@ body {
     margin: 2em 0;
 }
 
+.section {
+    margin: 3em 2em;
+}
+
+.container {
+    margin: 10px auto;
+}
+
 .leading {
     color: var(--primary);
+}
+
+.card {
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.2);
 }
 
 /* MOBILE STYLE */
@@ -103,18 +118,14 @@ form .domain-btn {
 
 
 /* ==== PACKET ==== */
-.packet {
-    margin: 3em 2em;
-}
-
 section select {
     margin: 20px 0;
     padding: 10px 20px;
     border-radius: 30px;
     border: none;
+    box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.2);
     font-weight: bold;
     appearance: none;
-    box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.2);
     background-image: url("/assets/img/caret-down-light.svg");
     background-size: 24px;
     background-repeat: no-repeat;
@@ -123,11 +134,8 @@ section select {
 
 .packet-card {
     margin: 10px auto;
-    background-color: white;
     padding: 30px 20px;
     width: 320px;
-    border-radius: 10px;
-    box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.2);
 }
 
 .packet-card .packet-name {
@@ -186,3 +194,54 @@ section select {
 
 
 /* ==== SERVICES ==== */
+.service {
+    margin: 3em 2em;
+}
+
+.add-on-card {
+    padding: 30px 20px;
+}
+
+.add-on-content {
+    justify-content: space-between;
+}
+
+.add-on-icon {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.add-on-icon span {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: .8rem;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.add-on-price {
+    text-align: right;
+    padding-top: 10px;
+    font-size: .9rem;
+}
+
+.add-on-price span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ==== Solution ==== */
+.solution .description {
+    margin: 20px 0;
+}
+
+.solution-card li {
+    margin: 10px 0;
+}
+
+.solution-card img {
+    width: 300px;
+}
