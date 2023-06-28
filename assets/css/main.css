@@ -55,6 +55,11 @@ body {
     box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.2);
 }
 
+.section-link a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
 /* MOBILE STYLE */
 /* NAVIGATION */
 nav {
@@ -198,8 +203,12 @@ section select {
     margin: 3em 2em;
 }
 
+.service h2 {
+    margin: 20px 0;
+}
+
 .add-on-card {
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 .add-on-content {
@@ -238,10 +247,111 @@ section select {
     margin: 20px 0;
 }
 
+.solution .description h2{
+    margin: 20px 0;
+}
+
 .solution-card li {
     margin: 10px 0;
 }
 
 .solution-card img {
     width: 300px;
+}
+
+/* ==== why-us ==== */
+.why-us h2 {
+    margin: 10px 0;
+}
+
+.why-us .description {
+    margin: 30px 0;
+}
+
+.why-us .card-transparent {
+    padding: 30px 20px;
+    background-color: #ff6a0729;
+}
+
+.why-us .card-transparent h3 {
+    margin: 15px 0;
+}
+
+/* ==== Subcriber ==== */
+.subscriber h2, .subscriber img {
+    margin: 20px 0;
+}
+
+/* ==== partner ==== */
+.partner h2, .partner img {
+    margin: 20px 0;
+}
+
+.partner a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* ==== Guaranted ==== */
+.guaranteed img {
+    width: 100%;
+}
+
+.guaranteed .card {
+    padding: 30px 20px;
+    background-color: #ff6a0729;
+}
+
+.guaranteed .card h2 {
+    margin: 20px 0;
+}
+
+/* ==== Testimony ==== */
+.testimony h2 {
+    margin: 20px 0;
+}
+
+.testimony .description {
+    margin: 20px 0;
+}
+
+/* ==== Swiper ==== */
+.swiper-wrapper {
+    margin-bottom: 20px;
+}
+
+.swiper-slide {
+    padding: 30px 20px;
+}
+
+.swiper-slide .section-link {
+    margin: 20px 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    margin: -10px 0;
+}
+
+.swiper-slide h5 {
+    font-style: italic;
+}
+
+.author h6 {
+    color: var(--primary);
+    font-size: .9rem;
+    margin: 10px 0;
+}
+
+/* ==== covered by ==== */
+.covered-by img {
+    margin: 20px 0;
+}
+
+/* ==== payment ==== */
+.payment img{
+    margin: 20px 0;
 }
