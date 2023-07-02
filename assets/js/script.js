@@ -1,3 +1,22 @@
+
+// Sidenav
+const menu = document.querySelector('.menu');
+const sideNav = document.querySelector('.sidenav');
+menu.addEventListener('click', () => {
+    sideNav.style.width = "300px";
+    sideNav.style.marginRight = "0px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+})
+
+const close = document.querySelector('.close');
+close.addEventListener('click', () => {
+    sideNav.style.width = "0px";
+    sideNav.style.marginRight = "-100px";
+    document.body.style.backgroundColor = 'white';
+})
+
+
+// Domain Checker
 const domainBtn = document.querySelector('.domain-btn');
 domainBtn.addEventListener('click', function(e) {
     e.preventDefault();
@@ -6,23 +25,34 @@ domainBtn.addEventListener('click', function(e) {
 
 function getKeyword() {
     const keyword = document.querySelector('.domainChecker').value;
-    const areAvailabel = checkDomain(keyword);
-    if(areAvailabel === 'UNAVAILABLE') {
-        alert('domain tidak tersedia');
-    } else {
-        alert('domain tersedia');
-    }
+    checkDomain(keyword);
 }
 
-
-const checkDomain = async (keyword) => {
+const checkDomain = (keyword) => {
     const url = `https://domain-availability.whoisxmlapi.com/api/v1?apiKey=at_ym0JkUgurWIzlQCGPRKH37ggDaei3&domainName=${keyword}&credits=DA`;
-    await fetch(url)
+    fetch(url)
         .then(response => response.json())
         .then(data => {
             const result = data.DomainInfo.domainAvailability;
-            return result;
+            checkerUI(result);
         });
+}
+
+function checkerUI(result) {
+    let resultContainer = document.querySelector('.result');
+    let str = "";
+    if(result === "UNAVAILABLE") {
+        str = `<div class="unavailable">
+        <h2>Domain tidak tersedia</h2>
+    </div>`;
+    resultContainer.innerHTML = str;
+    } else if (result === 'AVAILABLE') {
+        str = `<div class="available">
+        <h2>Domain Tersedia</h2>
+        <a href="#packet" class="domain-btn">Lanjut Hosing</a>
+    </div>`;
+    resultContainer.innerHTML = str;
+    }
 }
 
 // Packet Selection
@@ -91,4 +121,36 @@ function changePacketUI(result) {
 </div>`;
 
 card.innerHTML = str;
+}
+
+// accordion
+const accordionContent = document.querySelectorAll('.accordion-content');
+
+accordionContent.forEach((item, index) => {
+    let header = item.querySelector('.accordion-header');
+    header.addEventListener('click', () => {
+        item.classList.toggle('open');
+
+        let descrpition = item.querySelector('.description');
+        if(item.classList.contains("open")){
+            descrpition.style.height = `${descrpition.scrollHeight}px`;
+            item.querySelector("i").classList.replace("fa-angle-down", "fa-angle-up");
+        } else {
+            descrpition.style.height = "0px";
+            item.querySelector("i").classList.replace("fa-angle-up", "fa-angle-down");
+        }
+        removeOpen(index);
+    })
+})
+
+function removeOpen(index1){
+    accordionContent.forEach((item2, index2) => {
+        if(index1 !== index2) {
+            item2.classList.remove('open');
+
+            let des = item2.querySelector('.description');
+            des.style.height = "0px";
+            item2.querySelector('i').classList.replace("fa-angle-up", "fa-angle-down");
+        }
+    })
 }

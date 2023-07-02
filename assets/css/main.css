@@ -25,6 +25,7 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
+    transition: background-color 1.2s;
 }
 
 /* BASE STYLE */
@@ -60,6 +61,14 @@ body {
     font-weight: bold;
 }
 
+.segment {
+    margin: 30px 0;
+}
+
+.none {
+    display: none;
+}
+
 /* MOBILE STYLE */
 /* NAVIGATION */
 nav {
@@ -69,12 +78,58 @@ nav {
     top: 0;
     background-color: #fff;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
 }
 
 nav .brand {
     width: 89.63px;
     height: 35px;
+}
+
+/* ==== Sidenav ==== */
+.close {
+    text-align: left;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.sidenav {
+    background-color: #ffffff;
+    box-shadow: -17px 5px 35px -12px rgba(0,0,0,0.67);
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    margin-right: -500px;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    transition: 0.6s ease-out;
+    overflow-x: hidden;
+}
+
+.sidenav header img {
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+
+.sidenav .menu {
+    text-align: left;
+}
+
+.sidenav .menu .item {
+    padding: 10px 30px;
+}
+
+.sidenav .menu .item:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.sidenav .menu a {
+    color: black;
+    line-height: 40px;
 }
 
 /* MAIN */
@@ -103,7 +158,7 @@ form input {
     box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.2);
 }
 
-form .domain-btn {
+.domain-btn {
     background-color: black;
     padding: 10px 40px; 
     color: white;
@@ -119,6 +174,14 @@ form .domain-btn {
 .register img {
     margin: 10px 0;
     height: 30px;
+}
+
+.available h2{
+    margin-bottom: 20px;
+}
+
+.available .domain-btn {
+    background-color: var(--primary);
 }
 
 
@@ -354,4 +417,131 @@ section select {
 /* ==== payment ==== */
 .payment img{
     margin: 20px 0;
+}
+
+/* ==== Accordion ==== */
+.accordion {
+    max-width: 530px;
+    width: 100%;
+}
+
+.accordion-content {
+    background-color: var(--white);
+    border: 1px solid #37373730;
+    border-radius: 10px;
+    text-align: left;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.accordion-content.open {
+    padding-bottom: 30px;
+}
+
+.accordion-content header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #37373730;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.accordion-content header i {
+    background-color: #FEECDD;
+    padding: 7px 8px;
+    border-radius: 30px;
+    color: var(--primary);
+}
+
+.accordion-content .description {
+    height: 0;
+    padding: 0 15px;
+    transition: all 0.2s linear;
+}
+
+.accordion-content.open .description {
+    padding: 15px;
+}
+
+/* ==== Help ==== */
+.contact {
+    background: url('../img/bantuan.png');
+    background-size: cover;
+    background-color: #FEECDD;
+    padding: 30px 20px;
+}
+
+.contact h3 {
+    font-size: 2rem;
+}
+
+.contact h4 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact .contact-btn {
+    display: block;
+    background-color: var(--primary);
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 36px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* ==== Footer ==== */
+footer {
+    background-color: #212529;
+    color: var(--white);
+    text-align: left;
+    padding-left: 30px;
+}
+
+footer a {
+    color: var(--white);
+}
+
+footer .qwords-summary {
+    padding: 50px 0;
+}
+
+.qwords-summary .qwords-logo, .qwords-summary .qwords-bsi {
+    width: 150px;
+}
+
+.qwords-summary .description {
+    margin: 20px 0;
+}
+
+.footer-links .footer-link {
+    margin: 10px 0;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.segment h4 {
+    font-size: 1.1rem;
+}
+
+.office {
+    margin: 20px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 0;
 }
