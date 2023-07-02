@@ -49,7 +49,7 @@ function checkerUI(result) {
     } else if (result === 'AVAILABLE') {
         str = `<div class="available">
         <h2>Domain Tersedia</h2>
-        <a href="#packet" class="domain-btn">Lanjut Hosing</a>
+        <a href="#packet" class="domain-btn">Pilih Paket</a>
     </div>`;
     resultContainer.innerHTML = str;
     }

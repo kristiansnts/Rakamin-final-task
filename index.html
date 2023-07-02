@@ -15,14 +15,29 @@
 <body>
     
     <nav class="topnav flex">
-        <img src="assets/img/logo/qwords-logo.png" class="brand" alt="qwords-logo">
+        <a href="qwords.com"><img src="assets/img/logo/qwords-logo.png" class="brand" alt="qwords-logo"></a>
+        <div class="nav-menu">
+            <div class="menu-mid">
+                <div class="item"><a href="">Cloud Hosting <i class="fa-solid fa-angle-down"></i></a></div>
+                <div class="item"><a href="">Server <i class="fa-solid fa-angle-down"></i></a></div>
+                <div class="item"><a href="">Domain <i class="fa-solid fa-angle-down"></i></a></div>
+                <div class="item"><a href="">Email Suite <i class="fa-solid fa-angle-down"></i></a></div>
+                <div class="item"><a href="">Services <i class="fa-solid fa-angle-down"></i></a></div>
+                <div class="item"><a href="">Internet Access <i class="fa-solid fa-angle-down"></i></a></div>
+                <div class="item"><a href="">Costumer Care<i class="fa-solid fa-angle-down"></i></a></div>
+            </div>
+            <div class="menu-right">
+                <div class="item"><a href="">Daftar</a></div>
+                <div class="item"><a href="">Log in</a></div>
+            </div>
+        </div>
         <img src="assets/img/menu.png" class="menu">
     </nav>
     <div class="sidenav">
         <div class="close">
             <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="menu">
+        <div class="sidenav-menu">
             <div class="item"><a href="">Cloud Hosting <i class="fa-solid fa-angle-down"></i></a></div>
             <div class="item"><a href="">Server <i class="fa-solid fa-angle-down"></i></a></div>
             <div class="item"><a href="">Domain <i class="fa-solid fa-angle-down"></i></a></div>
@@ -43,7 +58,7 @@
                 </h1>
             </div>
             <div class="row">
-                <form action="">
+                <form action="" class="flex">
                     <input type="text" class="domainChecker" placeholder="Cari nama domain anda">
                     <a href="" class="domain-btn">Cari</a>
                 </form>
@@ -121,12 +136,96 @@
                     </ul>
                     <a href="" class="order-btn">Pesan Sekarang</a>
                 </div>
+                <div class="card-lg">
+                    <div class="card packet-card">
+                    <div class="packet-name">
+                        <p>Unlimited Hosting</p>
+                        <h1>Signature</h1>
+                    </div>
+                    <div class="price">
+                        <s>Rp 114.000</s>
+                        <span class="discount-price leading">Rp 89.900</span>
+                    </div>
+                    <ul class="content">
+                        <li>
+                            <img src="assets/img/tech/disk.png" alt="disk-icon">
+                            <div class="text">
+                                <span class="feature-name">Disk</span>
+                                <span class="feature-value">Unlimited</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/tech/bandwidth.png" alt="disk-icon">
+                            <div class="text">
+                                <span class="feature-name">Bandwidth</span>
+                                <span class="feature-value">Unlimited</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/tech/cpu.png" alt="disk-icon">
+                            <div class="text">
+                                <span class="feature-name">Core CPU</span>
+                                <span class="feature-value">1 Core</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/tech/addon.png" alt="disk-icon">
+                            <div class="text">
+                                <span class="feature-name">Addon / parked domain</span>
+                                <span class="feature-value">5 / 5</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="" class="order-btn">Pesan Sekarang</a>
+                    </div>
+                    <div class="card packet-card">
+                        <div class="packet-name">
+                            <p>High Performance</p>
+                            <h1>HPCH Bisnis 1</h1>
+                        </div>
+                        <div class="price">
+                            <s>Rp 109.000</s>
+                            <span class="discount-price leading">Rp 79.000</span>
+                        </div>
+                        <ul class="content">
+                            <li>
+                                <img src="assets/img/tech/disk.png" alt="disk-icon">
+                                <div class="text">
+                                    <span class="feature-name">Disk</span>
+                                    <span class="feature-value">3 GB</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="assets/img/tech/bandwidth.png" alt="disk-icon">
+                                <div class="text">
+                                    <span class="feature-name">Bandwidth</span>
+                                    <span class="feature-value">Unlimited</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="assets/img/tech/cpu.png" alt="disk-icon">
+                                <div class="text">
+                                    <span class="feature-name">Core CPU</span>
+                                    <span class="feature-value">1 Core</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="assets/img/tech/addon.png" alt="disk-icon">
+                                <div class="text">
+                                    <span class="feature-name">Addon / parked domain</span>
+                                    <span class="feature-value">-</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="" class="order-btn">Pesan Sekarang</a>
+                        </div>
+                </div>
             </div>
         </section>
         <section class="service section">
             <h2>Lihat Layanan Kami Yang Lain</h2>
             <p>Optimalkan performa website bisnis Anda dengan berbagai layanan berkualitas dari Qwords</p>
-            <div class="container">
+            <div class="container grid">
                 <div class="card add-on-card">
                     <div class="add-on-content flex">
                         <div class="add-on-icon">
@@ -213,90 +312,92 @@
                     pelanggan memilih sewa hosting di
                     Qwords</p>
             </div>
-            <div class="card card-transparent">
-                <img src="assets/img/commit/call.png" alt="">
-                <h3>Layanan 24/7</h3>
-                <p>Tim Technical Support dan
-                    Customer Service Qwords siap
-                    membantu Anda selama 24 jam,
-                    7 hari dengan waktu tanggapan
-                    cepat. Anda dapat
-                    menghubungi melalui Live chat,
-                    Call Center, Email dan Support
-                    Ticket.</p>
-            </div>
-            <div class="card card-transparent">
-                <img src="assets/img/commit/book.png" alt="">
-                <h3>Panduan Manual Lengkap</h3>
-                <p>Qwords dilengkapi dengan
-                    halaman knowledge base berisi
-                    tutorial dan tips seputar
-                    pengelolaan website dan
-                    hosting. Dapat diakses dengan
-                    mudah dan solutif</p>
-            </div>
-            <div class="card card-transparent">
-                <img src="assets/img/commit/router.png" alt="">
-                <h3>Uptime 99.99%</h3>
-                <p>Uptime Server di atas 99. 99%
-                    minim downtime dengan
-                    konfigurasi server yang tepat.
-                    Didukung manajemen jaringan
-                    dan multiple upstream tier 1
-                    provider network serta multiple
-                    peering sehingga server lebih
-                    stabil.</p>
-            </div>
-            <div class="card card-transparent">
-                <img src="assets/img/commit/guard.png" alt="">
-                <h3>Jaminan keamanan</h3>
-                <p>Keamanan menjadi fokus utama
-                    kami di Qwords. Tindakan
-                    pemantauan keamanan,
-                    pembaruan perangkat lunak
-                    dan pencegahan yang
-                    berstandar & berkelanjutan telah
-                    menjadi perhatian utama kami.</p>
-            </div>
-            <div class="card card-transparent">
-                <img src="assets/img/commit/networkAlt.png" alt="">
-                <h3>Clustered DNS</h3>
-                <p>DNS Server Cloud Hosting
-                    Qwords terhubung satu dengan
-                    yang lainnya. Hal ini membuat
-                    DNS Server akan selalu dapat di
-                    akses karena saling membackup
-                    antar server.</p>
-            </div>
-            <div class="card card-transparent">
-                <img src="assets/img/commit/diamond.png" alt="">
-                <h3>High Enterprise Server</h3>
-                <p>Qwords menggunakan standar
-                    server kelas enterprise Dual Xeon
-                    Octa Core yang merupakan
-                    hardware kelas terbaik.
-                    Hardware ini biasa digunakan
-                    oleh perusahaan terkemuka.</p>
-            </div>
-            <div class="card card-transparent">
-                <img src="assets/img/commit/router.png" alt="">
-                <h3>High Enterprise Server</h3>
-                <p>Tier 1 Network merupakan
-                    jaringan dunia tanpa transit
-                    network, yang membuat
-                    jaringan lebih cepat serta jalur
-                    routing yang lebih pendek dan
-                    ketersediaan backup network.</p>
-            </div>
-            <div class="card card-transparent">
-                <img src="assets/img/commit/network.png" alt="">
-                <h3>Peering Network</h3>
-                <p>Jaringan di Qwords terhubung
-                    langsung ke public peering
-                    seperti OpenIXP dan CDIX yang
-                    membuat latency atau waktu
-                    tunggu pengiriman data
-                    semakin kecil.</p>
+            <div class="container flex">
+                <div class="card card-transparent">
+                    <img src="assets/img/commit/call.png" alt="">
+                    <h3>Layanan 24/7</h3>
+                    <p>Tim Technical Support dan
+                        Customer Service Qwords siap
+                        membantu Anda selama 24 jam,
+                        7 hari dengan waktu tanggapan
+                        cepat. Anda dapat
+                        menghubungi melalui Live chat,
+                        Call Center, Email dan Support
+                        Ticket.</p>
+                </div>
+                <div class="card card-transparent">
+                    <img src="assets/img/commit/book.png" alt="">
+                    <h3>Panduan Manual Lengkap</h3>
+                    <p>Qwords dilengkapi dengan
+                        halaman knowledge base berisi
+                        tutorial dan tips seputar
+                        pengelolaan website dan
+                        hosting. Dapat diakses dengan
+                        mudah dan solutif</p>
+                </div>
+                <div class="card card-transparent">
+                    <img src="assets/img/commit/router.png" alt="">
+                    <h3>Uptime 99.99%</h3>
+                    <p>Uptime Server di atas 99. 99%
+                        minim downtime dengan
+                        konfigurasi server yang tepat.
+                        Didukung manajemen jaringan
+                        dan multiple upstream tier 1
+                        provider network serta multiple
+                        peering sehingga server lebih
+                        stabil.</p>
+                </div>
+                <div class="card card-transparent">
+                    <img src="assets/img/commit/guard.png" alt="">
+                    <h3>Jaminan keamanan</h3>
+                    <p>Keamanan menjadi fokus utama
+                        kami di Qwords. Tindakan
+                        pemantauan keamanan,
+                        pembaruan perangkat lunak
+                        dan pencegahan yang
+                        berstandar & berkelanjutan telah
+                        menjadi perhatian utama kami.</p>
+                </div>
+                <div class="card card-transparent">
+                    <img src="assets/img/commit/networkAlt.png" alt="">
+                    <h3>Clustered DNS</h3>
+                    <p>DNS Server Cloud Hosting
+                        Qwords terhubung satu dengan
+                        yang lainnya. Hal ini membuat
+                        DNS Server akan selalu dapat di
+                        akses karena saling membackup
+                        antar server.</p>
+                </div>
+                <div class="card card-transparent">
+                    <img src="assets/img/commit/diamond.png" alt="">
+                    <h3>High Enterprise Server</h3>
+                    <p>Qwords menggunakan standar
+                        server kelas enterprise Dual Xeon
+                        Octa Core yang merupakan
+                        hardware kelas terbaik.
+                        Hardware ini biasa digunakan
+                        oleh perusahaan terkemuka.</p>
+                </div>
+                <div class="card card-transparent">
+                    <img src="assets/img/commit/router.png" alt="">
+                    <h3>High Enterprise Server</h3>
+                    <p>Tier 1 Network merupakan
+                        jaringan dunia tanpa transit
+                        network, yang membuat
+                        jaringan lebih cepat serta jalur
+                        routing yang lebih pendek dan
+                        ketersediaan backup network.</p>
+                </div>
+                <div class="card card-transparent">
+                    <img src="assets/img/commit/network.png" alt="">
+                    <h3>Peering Network</h3>
+                    <p>Jaringan di Qwords terhubung
+                        langsung ke public peering
+                        seperti OpenIXP dan CDIX yang
+                        membuat latency atau waktu
+                        tunggu pengiriman data
+                        semakin kecil.</p>
+                </div>
             </div>
         </section>
         <section class="subscriber section">
@@ -617,7 +718,7 @@
                 
             </div>
         </div>
-        <div class="row">
+        <div>
             <div class="social-media">
                 <a href=""><img src="assets/img/social media/facebook.png" alt=""></a>
                 <a href=""><img src="assets/img/social media/instagram.png" alt=""></a>
@@ -638,6 +739,21 @@
         clickable: true,
       },
     });
+
+
+    // swiperjs media query
+    const mediaQuery = window.matchMedia('(min-width: 720px)')
+    // Check if the media query is true
+    if (mediaQuery.matches) {
+        const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+      },
+    });
+    }
   </script>
 </body>
 </html>
